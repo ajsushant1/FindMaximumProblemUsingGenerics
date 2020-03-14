@@ -27,6 +27,11 @@ public class FindMaximumTest {
     public void givenThreeFloats_WhenMaximumAtFirst_ThenReturnMaximum() {
         Float maximumFloat = findMaximum.getMaximumFloat(2.5f, 8.5f, 12.3f);
         Assert.assertEquals((Float) 12.3f, maximumFloat);
-        System.out.println(maximumFloat);
+    }
+
+    @Test
+    public void givenThreeFloats_WhenMaximumAtMiddle_ThenReturnMaximum() {
+        Float maximumFloat = findMaximum.getMaximumFloat(2.5f, 18.5f, 12.3f);
+        Assert.assertEquals((Float) 18.5f, maximumFloat);
     }
 }
