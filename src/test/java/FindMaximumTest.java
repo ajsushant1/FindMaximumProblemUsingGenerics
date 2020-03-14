@@ -77,4 +77,10 @@ public class FindMaximumTest {
         Assert.assertEquals("CAT", maximumString);
     }
 
+    @Test
+    public void givenThreeStringsWithUpperCaseAndLowerCase_CompareString_ThenReturnMaximumString() {
+        String maximumString = findMaximum.getMaximumString("APPLE", "bat", "CAT");
+        Assert.assertEquals("bat", maximumString);
+    }
+
 }
