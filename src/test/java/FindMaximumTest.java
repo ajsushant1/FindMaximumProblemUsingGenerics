@@ -47,4 +47,10 @@ public class FindMaximumTest {
         Assert.assertEquals("cat", maximumString);
     }
 
+    @Test
+    public void givenThreeStringsWithLowerCase_WhenMaximumAtMiddle_ThenReturnMaximum() {
+        String maximumString = findMaximum.getMaximumString("bat", "cat", "apple");
+        Assert.assertEquals("cat", maximumString);
+    }
+
 }
