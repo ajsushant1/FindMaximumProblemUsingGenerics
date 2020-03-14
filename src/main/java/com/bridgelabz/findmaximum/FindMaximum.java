@@ -5,11 +5,23 @@ public class FindMaximum {
     //METHOD TO GET MAXIMUM INTEGER NUMBER
     public Integer getMaximumInteger(Integer firstNumber, Integer secondNumber, Integer thirdNumber) {
         Integer maxNumber = firstNumber;
-        if (secondNumber.compareTo(maxNumber) > 0 ) {
-            maxNumber=secondNumber;
+        if (secondNumber.compareTo(maxNumber) > 0) {
+            maxNumber = secondNumber;
         }
         if (thirdNumber.compareTo(maxNumber) > 0) {
-            maxNumber=thirdNumber;
+            maxNumber = thirdNumber;
+        }
+        return maxNumber;
+    }
+
+    //METHOD TO GET MAXIMUM FLOAT NUMBER
+    public Float getMaximumFloat(Float firstNumber, Float secondNumber, Float thirdNumber) {
+        Float maxNumber = firstNumber;
+        if (secondNumber.compareTo(maxNumber) > 0) {
+            maxNumber = secondNumber;
+        }
+        if (thirdNumber.compareTo(maxNumber) > 0) {
+            maxNumber = thirdNumber;
         }
         return maxNumber;
     }
