@@ -3,24 +3,30 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class FindMaximumTest {
+    FindMaximum findMaximum = new FindMaximum();
+
     @Test
     public void givenThreeIntegers_WhenMaximumAtFirst_ThenReturnMaximum() {
-        FindMaximum findMaximum = new FindMaximum();
         Integer maximumInteger = findMaximum.getMaximumInteger(10, 8, 9);
         Assert.assertEquals((Integer) 10, maximumInteger);
     }
 
     @Test
     public void givenThreeIntegers_WhenMaximumAtMiddle_ThenReturnMaximum() {
-        FindMaximum findMaximum = new FindMaximum();
         Integer maximumInteger = findMaximum.getMaximumInteger(10, 18, 9);
         Assert.assertEquals((Integer) 18, maximumInteger);
     }
 
     @Test
     public void givenThreeIntegers_WhenMaximumAtLast_ThenReturnMaximum() {
-        FindMaximum findMaximum = new FindMaximum();
         Integer maximumInteger = findMaximum.getMaximumInteger(10, 18, 29);
         Assert.assertEquals((Integer) 29, maximumInteger);
+    }
+
+    @Test
+    public void givenThreeFloats_WhenMaximumAtFirst_ThenReturnMaximum() {
+        Float maximumFloat = findMaximum.getMaximumFloat(2.5f, 8.5f, 12.3f);
+        Assert.assertEquals((Float) 12.3f, maximumFloat);
+        System.out.println(maximumFloat);
     }
 }
