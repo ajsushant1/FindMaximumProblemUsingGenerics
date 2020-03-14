@@ -3,7 +3,7 @@ package com.bridgelabz.findmaximum;
 public class FindMaximum {
 
     //METHOD TO GET MAXIMUM INTEGER NUMBER
-    public Integer getMaximumInteger(Integer firstNumber,Integer secondNumber,Integer thirdNumber) {
+    public Integer getMaximumInteger(Integer firstNumber, Integer secondNumber, Integer thirdNumber) {
         Integer max = firstNumber;
         if (secondNumber.compareTo(max) > 0) {
             return secondNumber;
