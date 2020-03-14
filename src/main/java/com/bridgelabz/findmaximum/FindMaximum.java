@@ -26,6 +26,18 @@ public class FindMaximum {
         return maxNumber;
     }
 
+    //METHOD TO GET MAXIMUM STRING VALUE
+    public String getMaximumString(String firstString, String secondString, String thirdString) {
+        String maxString = firstString;
+        if (secondString.compareTo(maxString) > 0) {
+            maxString = secondString;
+        }
+        if (thirdString.compareTo(maxString) > 0) {
+            maxString = thirdString;
+        }
+        return maxString;
+    }
+
     public static void main(String[] args) {
         System.out.println("/**************************/ WELCOME TO FIND MAXIMUM /**************************/");
     }
