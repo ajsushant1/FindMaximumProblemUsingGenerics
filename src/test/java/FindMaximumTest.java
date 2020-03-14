@@ -25,13 +25,19 @@ public class FindMaximumTest {
 
     @Test
     public void givenThreeFloats_WhenMaximumAtFirst_ThenReturnMaximum() {
-        Float maximumFloat = findMaximum.getMaximumFloat(2.5f, 8.5f, 12.3f);
-        Assert.assertEquals((Float) 12.3f, maximumFloat);
+        Float maximumFloat = findMaximum.getMaximumFloat(22.5f, 8.5f, 12.3f);
+        Assert.assertEquals((Float) 22.5f, maximumFloat);
     }
 
     @Test
     public void givenThreeFloats_WhenMaximumAtMiddle_ThenReturnMaximum() {
         Float maximumFloat = findMaximum.getMaximumFloat(2.5f, 18.5f, 12.3f);
         Assert.assertEquals((Float) 18.5f, maximumFloat);
+    }
+
+    @Test
+    public void givenThreeFloats_WhenMaximumAtLast_ThenReturnMaximum() {
+        Float maximumFloat = findMaximum.getMaximumFloat(2.5f, 18.5f, 32.3f);
+        Assert.assertEquals((Float) 32.3f, maximumFloat);
     }
 }
