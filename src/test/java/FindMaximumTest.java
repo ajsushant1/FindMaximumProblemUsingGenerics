@@ -16,4 +16,11 @@ public class FindMaximumTest {
         Integer maximumInteger = findMaximum.getMaximumInteger(10, 18, 9);
         Assert.assertEquals((Integer) 18, maximumInteger);
     }
+
+    @Test
+    public void givenThreeIntegers_WhenMaximumAtLast_ThenReturnMaximum() {
+        FindMaximum findMaximum = new FindMaximum();
+        Integer maximumInteger = findMaximum.getMaximumInteger(10, 18, 29);
+        Assert.assertEquals((Integer) 29, maximumInteger);
+    }
 }
