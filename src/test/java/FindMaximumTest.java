@@ -59,4 +59,22 @@ public class FindMaximumTest {
         Assert.assertEquals("cat", maximumString);
     }
 
+    @Test
+    public void givenThreeStringsWithUpperCase_WhenMaximumAtFirst_ThenReturnMaximum() {
+        String maximumString = findMaximum.getMaximumString("CAT", "BAT", "APPLE");
+        Assert.assertEquals("CAT", maximumString);
+    }
+
+    @Test
+    public void givenThreeStringsWithUpperCase_WhenMaximumAtMiddle_ThenReturnMaximum() {
+        String maximumString = findMaximum.getMaximumString("BAT", "CAT", "APPLE");
+        Assert.assertEquals("CAT", maximumString);
+    }
+
+    @Test
+    public void givenThreeStringsWithUpperCase_WhenMaximumAtLast_ThenReturnMaximum() {
+        String maximumString = findMaximum.getMaximumString("APPLE", "BAT", "CAT");
+        Assert.assertEquals("CAT", maximumString);
+    }
+
 }
