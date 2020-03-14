@@ -83,4 +83,10 @@ public class FindMaximumTest {
         Assert.assertEquals("bat", maximumString);
     }
 
+    @Test
+    public void givenThreeNumberAsString_whenCompare_ThenReturnMaximumString() {
+        String maximumString = findMaximum.getMaximumString("5", "8", "3");
+        Assert.assertEquals("8", maximumString);
+    }
+
 }
