@@ -1,9 +1,9 @@
 package com.bridgelabz.findmaximum;
 
-public class FindMaximum<T extends Comparable<T>> {
+public class FindMaximum {
 
     //METHOD TO GET MAXIMUM VALUE
-    public T getMaximumValue(T firstValue, T secondValue, T thirdValue) {
+    public <T extends Comparable<T>> T getMaximumValue(T firstValue, T secondValue, T thirdValue) {
         T maxValue = firstValue;
         if (secondValue.compareTo(maxValue) > 0) {
             maxValue = secondValue;
