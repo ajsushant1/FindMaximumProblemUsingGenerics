@@ -1,41 +1,17 @@
 package com.bridgelabz.findmaximum;
 
-public class FindMaximum {
+public class FindMaximum<T extends Comparable<T>> {
 
-    //METHOD TO GET MAXIMUM INTEGER NUMBER
-    public Integer getMaximumInteger(Integer firstNumber, Integer secondNumber, Integer thirdNumber) {
-        Integer maxNumber = firstNumber;
-        if (secondNumber.compareTo(maxNumber) > 0) {
-            maxNumber = secondNumber;
+    //METHOD TO GET MAXIMUM VALUE
+    public T getMaximumValue(T firstValue, T secondValue, T thirdValue) {
+        T maxValue = firstValue;
+        if (secondValue.compareTo(maxValue) > 0) {
+            maxValue = secondValue;
         }
-        if (thirdNumber.compareTo(maxNumber) > 0) {
-            maxNumber = thirdNumber;
+        if (thirdValue.compareTo(maxValue) > 0) {
+            maxValue = thirdValue;
         }
-        return maxNumber;
-    }
-
-    //METHOD TO GET MAXIMUM FLOAT NUMBER
-    public Float getMaximumFloat(Float firstNumber, Float secondNumber, Float thirdNumber) {
-        Float maxNumber = firstNumber;
-        if (secondNumber.compareTo(maxNumber) > 0) {
-            maxNumber = secondNumber;
-        }
-        if (thirdNumber.compareTo(maxNumber) > 0) {
-            maxNumber = thirdNumber;
-        }
-        return maxNumber;
-    }
-
-    //METHOD TO GET MAXIMUM STRING VALUE
-    public String getMaximumString(String firstString, String secondString, String thirdString) {
-        String maxString = firstString;
-        if (secondString.compareTo(maxString) > 0) {
-            maxString = secondString;
-        }
-        if (thirdString.compareTo(maxString) > 0) {
-            maxString = thirdString;
-        }
-        return maxString;
+        return maxValue;
     }
 
     public static void main(String[] args) {
